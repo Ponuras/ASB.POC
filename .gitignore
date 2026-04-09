@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/ASB.POC.API/bin/Debug/net9.0
+/src/ASB.POC.API/obj
+/src/ASB.POC.Application/bin/Debug/net9.0
+/src/ASB.POC.Application/obj
+/src/ASB.POC.Consumer/bin/Debug/net9.0
+/src/ASB.POC.Consumer/obj
+/src/ASB.POC.Domain/bin/Debug/net9.0
+/src/ASB.POC.Domain/obj
+/src/ASB.POC.Infrastructure/bin/Debug/net9.0
+/src/ASB.POC.Infrastructure/obj
