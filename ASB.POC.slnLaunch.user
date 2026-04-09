@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\\ASB.POC.API\\ASB.POC.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\ASB.POC.Consumer\\ASB.POC.Consumer.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

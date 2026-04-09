@@ -1,0 +1,6 @@
+@ASB.POC.API_HostAddress = http://localhost:5147
+
+GET {{ASB.POC.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
