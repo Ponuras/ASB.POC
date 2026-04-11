@@ -59,6 +59,24 @@ public static class DependencyInjection
         return services;
     }
 
+    public static IServiceCollection AddServiceBusConsumer(this IServiceCollection services)
+    {
+        services
+            .AddOptions<ServiceBusOptions>()
+            .BindConfiguration(ServiceBusOptions.SectionName)
+            .ValidateOnStart();
+
+        services.AddSingleton(sp =>
+        {
+            var options = sp.GetRequiredService<IOptions<ServiceBusOptions>>().Value;
+            return new ServiceBusClient(options.ConnectionString);
+        });
+
+        services.AddHostedService<AzureServiceBusConsumer>();
+
+        return services;
+    }
+
     private static IServiceCollection AddKafkaOptions(this IServiceCollection services)
     {
         services
